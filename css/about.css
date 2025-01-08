@@ -1,0 +1,48 @@
+#about {
+    padding: 50px 20px;
+    background-color: #e0f2f1;
+    background-image: url('../i'); /* Add this line */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    text-align: center;
+    margin-top: 20px;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+
+
+#about .content-container h2 {
+    color: #004d40;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about .content-container h3 {
+    color: #00796b;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#about .content-container p {
+    font-size: 1.2em;
+    color: #00796b;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about .content-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about .content-container ul li {
+    font-size: 1.1em;
+    color: #00796b;
+    margin: 10px 0;
+}
+
+.scroll-section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
