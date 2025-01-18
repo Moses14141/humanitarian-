@@ -1,0 +1,91 @@
+/* General Section Styles */
+.projects-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;  /* Reduced font size */
+  color: #004d40;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* Project Layout */
+.project {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.project.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-text {
+  flex: 1;
+}
+
+.project-text h3 {
+  font-size: 1.8rem;  /* Reduced font size */
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.project-text p {
+  font-size: 0.95rem;  /* Reduced font size */
+  line-height: 1.6;
+  color: #333;
+}
+
+.project-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 250px;  /* Reduced image max-width */
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #004d40;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-section {
+      padding: 30px 15px;  /* Reduced padding for mobile */
+  }
+
+  .section-title {
+      font-size: 1.5rem;  /* Reduced font size for mobile */
+  }
+
+  .project {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .project.reverse {
+      flex-direction: column;
+  }
+
+  .project-text h3 {
+      font-size: 1.5rem;  /* Reduced font size for mobile */
+  }
+
+  .project-text p {
+      font-size: 0.9rem;  /* Reduced font size for mobile */
+  }
+
+  .project-image img {
+      max-width: 200px;  /* Reduced max-width for mobile */
+  }
+}
